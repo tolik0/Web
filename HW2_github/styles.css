@@ -1,0 +1,45 @@
+/* Add a black background color to the top navigation bar */
+* {
+    padding: 0;
+    margin: 0;
+}
+
+header.top {
+    overflow: hidden;
+    background-color: #24292e;
+    color: hsla(0, 0%, 100%, .75);
+    padding-bottom: 12px;
+    padding-top: 12px;
+    height: 38px;
+}
+
+header.top li{
+    list-style: none;
+    display: block;
+    float: left;
+    padding: 0px 8px;
+}
+
+header.top li a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+header.top .top-left {
+    float: left;
+}
+
+header.top .top-right {
+    float: right;
+}
+
+svg.logo-githab {
+    color: white;
+    fill: currentColor;
+}
+
+/* Style the search box inside the navigation bar */
+nav.top-left input[type=text] {
+    border: none;
+}

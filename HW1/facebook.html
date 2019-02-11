@@ -9,10 +9,16 @@
 </head>
 <body>
 <header>
-    <nav>
+    <nav >
         <ul>
-            <li><a href="https://www.facebook.com/?ref=logo"><img alt="" src=""></a></li>
-            <li><input type="text"></li>
+            <li><a aria-label="Facebook" href="https://www.facebook.com/?ref=logo"><img alt="facebook-logo" src=""></a>
+            </li>
+            <li>
+                <form action="" aria-label="Facebook search">
+                    <input name="search input" type="text">
+                    <button>Submit</button>
+                </form>
+            </li>
             <li><a href="https://www.facebook.com/profile.php?id=100011692745385">Анатолій</a></li>
             <li><a href="https://www.facebook.com/?ref=tn_tnmn">Home</a></li>
             <li>
@@ -162,74 +168,81 @@
         </ul>
     </nav>
 </header>
-<aside>
-    <nav>
-        <a href="https://www.facebook.com/profile.php?id=100011692745385&ref=bookmarks">
-            <img alt="" src="">
-            <p>Анатолій Яцук</p>
-        </a>
-        <a href="https://www.facebook.com/?sk=nf">News Feed</a>
-        <a href="">Messenger</a>
-        <a href="">Watch</a>
-        <section>
-            <header>
-                <h4>Shortcuts</h4>
-                <a href="https://www.facebook.com/bookmarks/dialog/">Edit</a>
-            </header>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/Official_Africa-137562523498782/?ref=bookmarks">Official_Africa</a>
-                </li>
-            </ul>
-        </section>
-        <section>
-            <header>
-                <h4>Explore</h4>
-            </header>
-            <ul>
-                <li>
-                    <a href="https://www.facebook.com/groups/?ref=bookmarks">Groups</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/pages/?category=your_pages&ref=bookmarks">Pages</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/events?ref=46&action_history=null">Events</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/pages/?category=your_pages&ref=bookmarks">Fundraisers</a>
-                </li>
-                <li>
-                    <a href="https://www.facebook.com/pages/?category=your_pages&ref=bookmarks">Buy and sell groups</a>
-                </li>
-                <li>
-                    <button>See more</button>
-                </li>
-            </ul>
-        </section>
-    </nav>
-</aside>
-<section>
+<nav>
+    <ul>
+        <li>
+            <a href="https://www.facebook.com/profile.php?id=100011692745385&ref=bookmarks">
+                <img alt="" src=""> Анатолій Яцук
+            </a>
+        </li>
+        <li><a href="https://www.facebook.com/?sk=nf">News Feed</a></li>
+        <li><a href="">Messenger</a></li>
+        <li><a href="">Watch</a></li>
+        <li>
+            <section>
+                <header>
+                    <h4>Shortcuts</h4>
+                    <a href="https://www.facebook.com/bookmarks/dialog/">Edit</a>
+                </header>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/Official_Africa-137562523498782/?ref=bookmarks">Official_Africa</a>
+                    </li>
+                </ul>
+            </section>
+        </li>
+        <li>
+            <section>
+                <header>
+                    <h4>Explore</h4>
+                </header>
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/groups/?ref=bookmarks">Groups</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/pages/?category=your_pages&ref=bookmarks">Pages</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/events?ref=46&action_history=null">Events</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/pages/?category=your_pages&ref=bookmarks">Fundraisers</a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/pages/?category=your_pages&ref=bookmarks">Buy and sell
+                            groups</a>
+                    </li>
+                    <li>
+                        <button>See more</button>
+                    </li>
+                </ul>
+            </section>
+        </li>
+    </ul>
+</nav>
+<main>
     <header>
-        <section>
-            <header><h4>Create post</h4></header>
-            <input type="text">
-            <hr>
-            <ul>
-                <li>
-                    <button>Photo/Video</button>
-                </li>
-                <li>
-                    <button>Tag friends</button>
-                </li>
-                <li>
-                    <button>Feeling/Activity</button>
-                </li>
-                <li>
-                    <button>More</button>
-                </li>
-            </ul>
-        </section>
+        <form aria-label="create-post">
+            <label> Create post</label>
+            <div>
+                <div>
+                    <img>
+                    <p> What's on your mind, Anatolii? </p>
+                </div>
+                <hr>
+                <div>
+                    <button>
+                        <img">
+                        Photo/Video
+                    </button>
+                    <button>
+                        <img>
+                        Tag friends
+                    </button>
+                </div>
+            </div>
+        </form>
     </header>
     <ul>
         <li>
@@ -291,7 +304,7 @@
             </article>
         </li>
     </ul>
-</section>
+</main>
 <div>
     <aside>
         <header>
