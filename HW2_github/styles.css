@@ -1,45 +1,140 @@
 /* Add a black background color to the top navigation bar */
 * {
-    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 header.top {
-    overflow: hidden;
+    float: inherit;
+    width: 100%;
     background-color: #24292e;
     color: hsla(0, 0%, 100%, .75);
     padding-bottom: 12px;
     padding-top: 12px;
-    height: 38px;
+    height: 62px;
 }
 
-header.top li{
+header.top nav {
+    padding: 0 16px;
+}
+
+header.top#top ul li {
+    float: none;
+    vertical-align: middle;
+    display: inline-block;
+    font-size: 0.9em;
     list-style: none;
-    display: block;
-    float: left;
-    padding: 0px 8px;
+    padding: 0 8px;
 }
 
-header.top li a {
+header.top a {
     color: white;
     text-align: center;
     text-decoration: none;
 }
 
-header.top .top-left {
+header.top nav.top-left {
     float: left;
+    height: 38px;
 }
 
-header.top .top-right {
+header.top nav.top-right {
     float: right;
+    height: 38px;
 }
 
 svg.logo-githab {
-    color: white;
-    fill: currentColor;
+    fill: white;
+    margin-top: 4px;
 }
 
-/* Style the search box inside the navigation bar */
+header.top li#search {
+    margin: 4px 0;
+    padding: 0 8px;
+    border-radius: 3px;
+    height: 30px;
+    background-color: hsla(0, 0%, 100%, .125);
+}
+
 nav.top-left input[type=text] {
+    background: none;
     border: none;
+}
+
+/*details.dropdown div.dropdown-content {*/
+/*    background-clip: padding-box;*/
+/*    background-color: #fff;*/
+/*    border: 1px solid rgba(27, 31, 35, .15);*/
+/*    border-radius: 4px;*/
+/*    box-shadow: 0 3px 12px rgba(27, 31, 35, .15);*/
+/*    left: 0;*/
+/*    list-style: none;*/
+/*    margin-top: 2px;*/
+/*    padding-bottom: 5px;*/
+/*    padding-top: 5px;*/
+/*    position: absolute;*/
+/*    top: 100%;*/
+/*    width: 160px;*/
+/*    color: black;*/
+/*}*/
+
+/*.dropdown-content:before {*/
+/*    left: auto;*/
+/*    right: 9px;*/
+/*    top: -16px;*/
+/*}*/
+
+/*.dropdown-content:after {*/
+/*    left: auto;*/
+/*    right: 10px;*/
+/*    top: -14px;*/
+/*}*/
+
+/*.dropdown-content:after, .dropdown-content:before {*/
+/*    content: "";*/
+/*    display: inline-block;*/
+/*    position: absolute;*/
+/*}*/
+html, body {
+    height: 100%;
+
+}
+
+main, aside.left-aside, aside.right-aside {
+    list-style: none;
+    height: 100%
+}
+
+aside.left-aside {
+    display: block;
+    float: left;
+    width: 25%;
+    background-color: white;
+}
+
+main {
+    display: block;
+    float: left;
+    background-color: #e1e4e8;
+    width: 50%
+}
+
+.avatar {
+    border-radius: 3px;
+    display: inline-block;
+    line-height: 1;
+    overflow: hidden;
+    vertical-align: middle;
+}
+article.post {
+    display: inline-block;
+}
+
+aside.right-aside {
+    float: left;
+    display: block;
+    background-color: #e1e4e8;
+    width: 25%;
 }
