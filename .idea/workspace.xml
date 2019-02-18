@@ -29,11 +29,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/HW2_github/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
+            <state relative-caret-position="482">
+              <caret line="173" column="19" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="19" />
               <folding>
-                <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
+                <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
@@ -42,8 +41,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/HW2_github/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="132" selection-start-line="132" selection-end-line="132" />
+            <state relative-caret-position="91">
+              <caret line="235" lean-forward="true" selection-start-line="235" selection-end-line="235" />
             </state>
           </provider>
         </entry>
@@ -100,7 +99,7 @@
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="D:/Downloads/Telegram Desktop/Github/Github" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
@@ -139,6 +138,7 @@
       <workItem from="1549992929649" duration="6191000" />
       <workItem from="1550059113169" duration="5787000" />
       <workItem from="1550091356985" duration="6210000" />
+      <workItem from="1550515355145" duration="13219000" />
     </task>
     <task id="LOCAL-00001" summary="Add facebook.html">
       <created>1549479656577</created>
@@ -151,10 +151,11 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="54789000" />
+    <option name="totallyTimeSpent" value="68008000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="781" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.92836255" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -277,19 +278,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/HW2_github/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="174" column="32" selection-start-line="174" selection-start-column="32" selection-end-line="174" selection-end-column="32" />
+        <state relative-caret-position="482">
+          <caret line="173" column="19" selection-start-line="173" selection-start-column="19" selection-end-line="173" selection-end-column="19" />
           <folding>
-            <element signature="n#aside#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#aside#1;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#header#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/HW2_github/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="132" selection-start-line="132" selection-end-line="132" />
+        <state relative-caret-position="91">
+          <caret line="235" lean-forward="true" selection-start-line="235" selection-end-line="235" />
         </state>
       </provider>
     </entry>

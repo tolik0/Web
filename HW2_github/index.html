@@ -10,15 +10,15 @@
     <nav class="top-left">
         <ul>
             <li aria-label="Home">
-                <svg aria-hidden="true" class="logo-githab" viewBox="0 0 16 16" height="32" width="32">
+                <svg aria-hidden="true" class="logo-githab" height="32" viewBox="0 0 16 16" width="32">
                     <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0 0 16 8c0-4.42-3.58-8-8-8z"
                           fill-rule="evenodd"></path>
                 </svg>
             </li>
-            <li id="search" aria-label="Github search">
+            <li aria-label="Github search" id="search">
                 <form>
-                    <input type="text" placeholder="Search or jump to..." name="search">
-                    <img src="https://github.githubassets.com/images/search-key-slash.svg" alt="slash">
+                    <input name="search" placeholder="Search or jump to..." type="text">
+                    <img alt="slash" src="https://github.githubassets.com/images/search-key-slash.svg">
                 </form>
             </li>
             <li><a href="https://github.com/pulls">Pull requests</a></li>
@@ -54,7 +54,8 @@
             <li>
                 <details class="dropdown">
                     <summary class="dropdown-top"><img alt="@tolik0" height="20"
-                                  src="https://avatars1.githubusercontent.com/u/35109939?s=40&amp;v=4" width="20">
+                                                       src="https://avatars1.githubusercontent.com/u/35109939?s=40&amp;v=4"
+                                                       width="20">
                     </summary>
                     <div class="dropdown-content">
                         <header>
@@ -79,8 +80,10 @@
 <aside class="left-aside">
     <nav>
         <header>
-            <h4>Repositories</h4>
-            <a href="https://github.com/new">New</a>
+            <h4>
+                Repositories
+                <a href="https://github.com/new">New</a>
+            </h4>
         </header>
         <input placeholder="Find a repository..." type="text">
         <ul>
@@ -168,7 +171,7 @@
     </nav>
 </aside>
 <main>
-    <ul>
+    <ul class="news">
         <li>
             <span><img alt="@chernetskyi" class="avatar" height="32"
                        src="https://avatars0.githubusercontent.com/u/19735328?s=64&amp;v=4" width="32"></span>
@@ -225,37 +228,46 @@
         </li>
     </ul>
     <footer>
-        <span>ProTip! The feed shows you events from people you follow and repositories you watch.</span>
-        <a href="">Subscribe to your news feed</a>
-        <a href="">© 2019 GitHub, Inc.</a>
-        <nav>
-            <ul>
-                <li>
+        <div class="footer-top">
+            <span>ProTip! The feed shows you events from people you follow and repositories you watch.</span>
+            <br>
+            <a href="">Subscribe to your news feed</a>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-column-left">
+                <a href="">© 2019 GitHub, Inc.</a>
+            </div>
+            <div class="footer-column-right">
+                <nav>
                     <ul>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Shop</a></li>
-                        <li><a href="">Contact GitHub</a></li>
-                        <li><a href="">Pricing</a></li>
+                        <li>
+                            <ul>
+                                <li><a href="">Blog</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="">Shop</a></li>
+                                <li><a href="">Contact GitHub</a></li>
+                                <li><a href="">Pricing</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="">API</a></li>
+                                <li><a href="">Training</a></li>
+                                <li><a href="">Status</a></li>
+                                <li><a href="">Security</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul>
+                                <li><a href="">Terms</a></li>
+                                <li><a href="">Privacy</a></li>
+                                <li><a href="">Help</a></li>
+                            </ul>
+                        </li>
                     </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><a href="">API</a></li>
-                        <li><a href="">Training</a></li>
-                        <li><a href="">Status</a></li>
-                        <li><a href="">Security</a></li>
-                    </ul>
-                </li>
-                <li>
-                    <ul>
-                        <li><a href="">Terms</a></li>
-                        <li><a href="">Privacy</a></li>
-                        <li><a href="">Help</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </nav>
+                </nav>
+            </div>
+        </div>
     </footer>
 </main>
 <aside class="right-aside">
