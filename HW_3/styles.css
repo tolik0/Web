@@ -4,9 +4,23 @@
     padding: 0;
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    background-color: #f6f8fa;
+    height: 100%;
+    display: grid;
+    grid-template-areas: 'header header header header
+     'left middle middle right'
+    'left middle middle right';
+    grid-template-rows: 62px auto;
+    grid-template-columns: 25% 25% 25% 25%;
+}
+
 header.top {
-    position: relative;
-    width: 100%;
+    grid-area: header;
     background-color: #24292e;
     color: hsla(0, 0%, 100%, .75);
     padding-bottom: 12px;
@@ -14,41 +28,58 @@ header.top {
     height: 38px;
 }
 
-header.top nav {
-    display: inline-block;
+.left-aside {
+    height: 100%;
+    grid-area: left;
+    padding-left: 24px;
+    padding-right: 24px;
+    display: block;
+    background-color: white;
+}
+
+main {
+    background-color: #f6f8fa;
+    padding-top: 16px;
+    grid-area: middle;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+.right-aside {
+    background-color: #f6f8fa;
+    padding-top: 32px;
+    grid-area: right;
+    padding-left: 16px;
+    padding-right: 16px;
+}
+
+header > nav {
     height: 100%;
     padding: 0 16px;
 }
 
-header.top nav ul {
-    height: 100%;
+header > nav.top-left {
+    float: left;
     position: relative;
-    float: left;
 }
 
-header.top#top ul li {
-    float: left;
-    display: inline-block;
-    font-size: 0.9em;
-    list-style: none;
-    padding: 0 8px;
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-header.top a {
-    color: white;
-    text-align: center;
-    text-decoration: none;
-}
-
-header.top nav.top-left {
-    float: left;
-}
-
-header.top nav.top-right {
+header > nav.top-right {
     float: right;
+    position: relative;
+}
+
+header > nav > ul {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    list-style: none;
+    overflow: hidden;
+}
+
+header > nav > ul > li {
+    padding: 0 8px;
+    display: inline-block;
 }
 
 svg.logo-githab {
@@ -57,24 +88,14 @@ svg.logo-githab {
 
 header.top li#search {
     margin: 0 8px;
-    position: relative;
     border-radius: 3px;
-    height: 30px !important;
+    height: 30px;
     background-color: hsla(0, 0%, 100%, .125);
 }
 
 header.top li#search form {
     height: 100%;
     position: relative;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-nav.top-left input[type=text] {
-    vertical-align: middle;
-    background: none;
-    border: none;
-    color: white;
 }
 
 header.top li#search form img {
@@ -83,34 +104,32 @@ header.top li#search form img {
     transform: translateY(-50%);
 }
 
-html, body {
-    background-color: #f6f8fa;
+nav.top-left input[type=text] {
     height: 100%;
-
+    vertical-align: middle;
+    background: none;
+    border: none;
+    color: white;
 }
 
-main, aside.left-aside, aside.right-aside {
-    box-sizing: border-box;
-    list-style: none;
-    height: auto;
+header > nav > ul > li > a {
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+header > nav > ul > li > a:hover {
+    color: gray;
+}
+
+.left-aside > nav {
     overflow: hidden;
-}
-
-main, aside.right-aside {
-    padding-left: 16px;
-    padding-right: 16px;
-}
-
-aside.left-aside {
     padding-top: 32px;
-    padding-left: 24px;
-    padding-right: 24px;
-    max-width: 25%;
-    display: block;
-    float: left;
-    width: auto;
-    background-color: white;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
 }
+
 
 h4 {
     font-weight: 600;
@@ -151,13 +170,6 @@ aside.left-aside ul li a {
 
 aside.left-aside ul li summary {
     font-size: 0.7em;
-}
-
-main {
-    padding-top: 16px;
-    display: block;
-    float: left;
-    width: 50%;
 }
 
 main ul.news {
@@ -268,13 +280,13 @@ main div.footer-column-right ul ul {
     width: 33.33%;
 }
 
-aside.right-aside {
-    padding-top: 32px;
-    float: left;
-    display: block;
-    width: 25%;
+main footer {
+    font-size: 0.8em;
 }
-
+main footer a{
+    text-decoration: none;
+    color: #586069;
+}
 aside.right-aside ul {
     list-style: none;
 }
@@ -285,3 +297,4 @@ aside.right-aside li {
     padding-bottom: 16px;
     border-bottom: 1px solid #e1e4e8
 }
+
